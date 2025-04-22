@@ -1,0 +1,98 @@
+/* Set the font family and background styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('pics/BGse.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Center the login form wrapper */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Style the logo */
+.logo {
+  margin-bottom: 20px;
+}
+
+/* Style the input container */
+.input-container {
+  width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 10px;
+}
+
+/* Style the input fields */
+.input-container input {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Center the form */
+.form {
+  text-align: center;
+}
+
+/* Style the sign-up link */
+.sentence {
+  margin-top: 20px;
+  color: #a7a7a7;
+}
+
+.sentence a {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+}
+
+.sentence a:hover {
+  text-decoration: underline;
+}
+
+/* Style the select dropdown */
+.select-container {
+  position: relative;
+  width: 200px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  color: #000;
+  border: 1px solid #070303;
+  border-radius: 4px;
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option {
+  color: gray;
+}
+
+/* Style the login button */
+.bt {
+  width: 40%;
+  height: 50px;
+  background: #E1EEEF;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 5px rgb(0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #A27861;
+  font-weight: 500;
+  margin-bottom: 1%;
+  margin-top: 10%;
+}

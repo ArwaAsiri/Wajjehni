@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="safetytest1.css" >
+<script src="button.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+
+<style>
+   body {
+     background-image: url('Sc1.png'); /* URL of the background image */
+     background-size: cover; /* Cover the entire background */
+     background-position: center; /* Center the background image */
+     background-repeat: no-repeat; /* Do not repeat the background image */
+     background-attachment: fixed; /* Fixed background image */
+     text-align: center; /* Aligning the content of the entire page to the center */
+     margin: 0; /* Remove default margin */
+     padding: 0; /* Remove default padding */
+   }
+   
+ul {
+  position: fixed;
+  list-style-type: none;
+  width: 100%;
+  top: 680px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #A27861;
+}
+
+li {
+  float:left;
+}
+li a {
+  display:flow-root;
+  color: white;
+  text-align: center;
+  padding: 16px 40px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #A27861;
+}
+
+.dropdown1 {
+   position:fixed; /* Keeps the dropdown at the top left */
+   top:200px;
+   left: 130px;
+   display:inline-block;
+ }
+ .dropdown2 {
+  position:fixed; /* Keeps the dropdown at the top left */
+  top:270px;
+  left: 130px;
+  display:inline-block;
+}
+.dropdown3 {
+  position:fixed; /* Keeps the dropdown at the top left */
+  top:340px;
+  left: 180px;
+  display: inline-block;
+}
+.circle1{
+  position: absolute;
+height: 30px;
+width: 30px;
+border: 5px;
+left:130%;
+top: 210px;
+transform: translatex(-805%);
+background-color: red;
+border-radius: 5000px;
+ }
+ .circle2{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 5px;
+  left:130%;
+  top:280px;
+  transform:translatex(-236px);
+  background-color: yellow;
+  border-radius: 5000px;
+ }
+ .circle3{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 5px;
+  left:130%;
+  top:350px;
+  transform: translateX(-788%);
+  background-color: green;
+  border-radius: 500px;
+ }
+</style>
+<title>Safety</title>
+
+</head>
+<body>
+
+
+ <!--button -->
+ <div class="dropdown1">
+<button onclick="selectOption2('Urgent intervention')">Urgent intervention</button>
+ </div>
+ <div class="title"><h2>Safety</h2></div>
+
+ <div class="dropdown2">
+    <button  onclick ="selectOption1('simple intervention')">simple intervention</button>
+  </div>
+<div class="dropdown3">
+  <button  onclick ="selectOption('help')">Help</button>
+</div>
+<!--circle-->
+<div class="circle1"></div>
+<div class="circle2"></div>
+<div class="circle3"></div>
+ </div>
+
+ <ul>
+
+  <li><a href="#news"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                  d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708z" />
+          </svg></a></li>
+  <li><a href="W1.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-calendar-event" viewBox="0 0 16 16">
+              <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+              <path      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+          </svg></a></li>
+  <li><a href="test.html"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-geo-alt" viewBox="0 0 16 16">
+              <path
+                  d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg></a></li>
+          <li><a class="active" href="#home"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+          </svg></a></li>
+</ul>
+
+</html>
+</body>

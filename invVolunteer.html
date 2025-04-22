@@ -1,0 +1,99 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Volunteer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+    <link rel="stylesheet" href="invVolunteer.css">
+   
+</head>
+<body>
+    <div class="container"><!--name input-->
+        <img class="logo" src="Blue Green Colorful Daycare Center Presentation.png"/>
+        <form action="http://localhost/W/insert_volunteer.php" method="post" onsubmit="return validateForm()">
+            <div class="input-group">
+                <label for="nameInput">Name:</label>
+                <textarea id="nameInput" name="name"></textarea>
+            </div>
+            <div class="input-group"><!--email Input-->
+                <img class="icon" src="Blue Green Colorful Daycare Center Presentation(4).png"/>
+                <label for="emailInput">University Email:</label>
+                <textarea id="emailInput" name="email"></textarea>
+            </div>
+            <div class="input-group"><!--department Input-->
+                <img class="icon" src="Blue Green Colorful Daycare Center Presentation(6).png"/>
+                <label for="departmentInput">Department:</label>
+                <textarea id="departmentInput" name="department"></textarea>
+            </div>
+            <div class="input-group"><!--level Input-->
+                <img class="icon" src="Blue Green Colorful Daycare Center Presentation(5).png"/>
+                <label for="levelInput">Academic Level:</label>
+                <textarea id="levelInput" name="academic_level"></textarea>
+            </div>
+            <div class="input-group"><!--points Input-->
+                <img class="icon" src="Blue Green Colorful Daycare Center Presentation(3).png"/>
+                <label for="pointsInput">Points:</label>
+                <textarea id="pointsInput" name="points"></textarea>
+            </div>
+            <div class="input-group"><!--volunteer Input-->
+                <img class="icon" src="Blue Green Colorful Daycare Center Presentation(7).png"/>
+                <label for="volunteeringInput">Type of Volunteering:</label>
+                <textarea id="volunteeringInput" name="volunteering_type"></textarea>
+            </div>
+            <button class="custom-link" type="submit" >Volunteering</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("nameInput").value.trim();
+            var email = document.getElementById("emailInput").value.trim();
+            var department = document.getElementById("departmentInput").value.trim();
+            var academicLevel = document.getElementById("levelInput").value.trim();
+            var points = document.getElementById("pointsInput").value.trim();
+            var volunteeringType = document.getElementById("volunteeringInput").value.trim();
+            
+            if (name === "" || email === "" || department === "" || academicLevel === "" ||points === "" || volunteeringType === "") {
+                alert("Please fill in all fields.");
+                return false;
+            }
+            
+            // Validate email format
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+        // Check for any numbers in the text fields
+        var textPattern = /\d/;
+        if (textPattern.test(name) || textPattern.test(department)|| textPattern.test(volunteeringType)) {
+            alert("Please enter text in the fields.");
+            return false;
+        }
+        // Check for any text in the numbers fields
+        var numberPattern = /^\d+$/;
+        if (!numberPattern.test(points)||!numberPattern.test(academicLevel)) {
+           alert("Please enter number in the point and Academic Level fields.");
+           return false;
+}
+
+
+
+    }
+    </script>
+    <!-- Navigation Bar -->
+<div class="navbar">
+    <a href="Login.html"><i class="fas fa-arrow-left"></i></a> <!-- Arrow pointing left icon -->
+    <a href="W1.html"><i class="fas fa-calendar-alt"></i></a> <!-- Calendar icon -->
+    <a href="test.html"><i class="fas fa-map-marker-alt"></i></a> <!-- Location icon -->
+    <a href="#"><i class="fas fa-user"></i></a> <!-- Profile icon -->
+  </div>
+</body>
+</html>
+
+
